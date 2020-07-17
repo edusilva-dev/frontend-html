@@ -1,16 +1,73 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="utf-8">
 
     <title>Moovin</title>
     <meta name="description" content="Moovin">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Write your code here -->
+    <div class="container">
+
+        <div class="menu-on-top">
+
+            <div class="contact-numbers">
+
+                <img class="icon" src="icons/phone.svg" width="20px" height="20px" alt="Phone Icon">
+                <span class="number">(51) 9 9920 0350</span>
+
+                <img class="whats" src="icons/whats.svg" width="20px" height="20px" alt="Phone Icon">
+                <span class="number">(51) 9 9920 0350</span>
+
+            </div>
+    
+            <div class="other-options">
+                <a href="#"><h3>LISTA DE DESEJO</h3></a>
+                <a href="#"><h3>FALE CONOSCO</h3></a>
+                <a href="#"><h3>TROCAS E DEVOLUÇÕES</h3></a>
+            </div>
+
+        </div>
+
+        <div class="container-navbar">
+            <nav class="navbar">
+
+                <div class="logo">
+                    <a href=""><img src="img/logo.svg" width="139px" height="50px" alt="Logo Moovin"></a>
+                </div>
+
+                <div class="search">
+                    <input type="text" name="search-input" id="search-input" placeholder="O que você está procurando?">
+                    <img src="icons/search.svg" width="12px" height="12px" alt="Search Icon">
+                </div>
+
+                <div class="dropdown">
+                    <span class="menu-dropdown">Entrar </span>
+                    <img src="icons/chevron-down.svg" width="7px" height="4.5px" alt="Chevron Icon">
+                    <div class="hidden-menu" style="display: none;">
+                        <a href="">Minha Conta</a>
+                        <a href="">Meus Pedidos</a>
+                        <a href="">Lista de Desejos</a>
+                    </div>
+                </div>
+
+                <div class="bag">
+                    <a href=""><img src="icons/bag.svg" width="23px" height="27px" alt="">
+                    <span class="items-bag">+50</span></a>
+                </div>
+
+            </nav>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="js/pickSize.js"></script>
 </body>
 
 </html>

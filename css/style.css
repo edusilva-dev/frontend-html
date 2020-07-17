@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-on-top{
+    width: 100%;
+    height: 32px;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-numbers{
+    width: 50%;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.other-options{
+    width: 50%;
+    margin-right: 20%;
+    font-size: 0.6875rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.other-options a{
+    text-decoration: none;
+    color: #000;
+}
+
+.other-options h3:hover{
+    transition: all .2s ease-in;
+    border-bottom: 1px solid #0DBC4F;
+}
+
+.other-options h3{
+    font-weight: 400;
+}
+
+.number{
+    font-size: 0.75rem;
+}
+
+.whats{
+    margin-left: 50px;
+    margin-right: 5px;
+}
+
+.container-navbar{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search{
+    width: 55%;
+}
+
+.search input{
+    width: 100%;
+    box-shadow: -5px 5px 10px #f1f1f1;
+    padding: 9.5px;
+    border-radius: 5px;
+    border: 2px solid #dfdfdf;
+    outline: none;
+}
+
+.search img{
+    position: absolute;
+    margin-top: -31px;
+    margin-left: 32.5%;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.dropdown{
+    cursor: pointer;
+}
+
+.dropdown img{
+    transform: rotate(0deg);
+}
+
+.dropdown:hover .hidden-menu{
+    box-shadow: 0px 0px 5px #00000033;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    margin-left: -2.3%;
+    display: flex!important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown:hover img{
+    transform: rotate(180deg);
+}
+
+.hidden-menu a{
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    color: #000;
+    font-weight: 600;
+}
+
+.hidden-menu a:nth-last-child(1){
+    margin-bottom: 10px;
+}
+
+.hidden-menu a:hover{
+    font-weight: 700;
+}
+
+.hidden-menu a::before{
+    font-weight: bold;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.items-bag{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    margin-left: -0.8%;
+    margin-top: 8px;
+    background-color: #000;
+    border-radius: 50px;
+    color: #FFF;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 0.75rem;
+}
+
+@media screen and (max-width: 1165px){
+    .contact-numbers{
+        width: 35%;
+        margin-left: 15%;
+    }
+
+    .other-options{
+        width: 35%;
+        margin-right: 15%;
+    }
+
+    .navbar{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .search img{
+        margin-left: 37.5%;
+    }
+
+    .dropdown:hover .hidden-menu{
+        background-color: #fff;
+        margin-left: -3.5%;
+    }
+
+}
+
+@media screen and (max-width: 1035px){
+    .contact-numbers{
+        width: 40%;
+        margin-left: 10%;
+    }
+
+    .other-options{
+        width: 40%;
+        margin-right: 10%;
+    }
+
+    .navbar{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .search img{
+        margin-left: 43%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .contact-numbers{
+        width: 35%;
+        margin-left: 10%;
+    }
+
+    .other-options{
+        width: 45%;
+        margin-right: 10%;
+    }
+
+    .dropdown:hover .hidden-menu{
+        margin-left: -4%;
+    }
+}
+
+@media screen and (max-width: 820px){
+    .contact-numbers{
+        width: 35%;
+        margin-left: 5%;
+    }
+
+    .other-options{
+        width: 45%;
+        margin-right: 5%;
+    }
+
+    .navbar{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .search img{
+        margin-left: 48%;
+    }
+
+    .dropdown:hover .hidden-menu{
+        background-color: #fff;
+        margin-left: -4.5%;
+    }
+
+    .items-bag{
+        margin-left: -1.4%;
+    }
+}
+
+@media screen and (max-width: 798px){
+    .icon{
+        width: 15px;
+        height: 15px;
+    }
+
+    .whats{
+        margin-left: 10px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .contact-numbers{
+        width: 35%;
+        margin-left: 5%;
+    }
+
+    .other-options{
+        width: 55%;
+        margin-right: 5%;
+    }
+
+    .navbar{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .search img{
+        margin-left: 48%;
+    }
+
+    .items-bag{
+        margin-left: -1.4%;
+    }
+}
+
+@media screen and (max-width: 725px){
+    .search input{
+        width: 95%;
+    }
+
+    .search img{
+        margin-left: 46%;
+    }
+}
+
+@media screen and (max-width: 665px){
+    .contact-numbers{
+        width: 40%;
+        font-size: 0.65rem;
+    }
+
+    .other-options{
+        width: 50%;
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .search input{
+        width: 90%;
+    }
+
+    .search img{
+        margin-top: 10px;
+        margin-left: -5%;
+    }
+}
+
+@media screen and (max-width: 605px){
+    .contact-numbers{
+        width: 50%;
+    }
+
+    .number{
+        font-size: 0.75rem;
+    }
+
+    .other-options{
+        width: 45%;
+        font-size: 0.6rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 590px){
+    .search input{
+        margin-left: 10px;
+        width: 85%;
+    }
+
+    .dropdown{
+        margin-left: -10px;
+    }
+}
+
+@media screen and (max-width: 590px){
+    .search input{
+        margin-left: 10px;
+        width: 75%;
+    }
+
+    .dropdown{
+        margin-left: -30px;
+    }
+
+    .dropdown:hover .hidden-menu{
+        margin-left: -6.5%;
+    }
+}
